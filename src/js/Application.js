@@ -26,7 +26,7 @@ export default class Application extends EventEmitter {
       message.classList.add("message");
       message.innerText = lyrics[count];
       count++;
-      if (count < maxLenght) {
+      if (count <= maxLenght) {
         document.querySelector(".main").appendChild(message);
       } else {
         console.log("done");
